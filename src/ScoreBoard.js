@@ -5,7 +5,7 @@ const ScoreBoard = (props) => {
   return (
     <div className="ScoreBoard">
       <p>Score: {props.score}</p>
-      <p>Top Score: {props.topScore} / 10</p>
+      <p>Top Score: {props.topScore} / 12</p>
     </div>
   );
 };

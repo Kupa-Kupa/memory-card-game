@@ -1,6 +1,19 @@
 .card-board {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
+
+  max-width: 1400px;
   border: solid black 3px;
   padding: 2rem;
+}
+
+.winner {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 4rem;
 }
