@@ -10,10 +10,17 @@
 }
 
 .winner {
-  min-height: 80vh;
+  min-height: 70vh;
+
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   font-size: 4rem;
+}
+
+.winner button {
+  font-size: 2rem;
+  border-radius: 5px;
 }

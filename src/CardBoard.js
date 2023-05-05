@@ -18,8 +18,26 @@ const CardBoard = (props) => {
     { number: 12, clicked: false, id: 12 },
   ]);
 
-  if (Number(props.score) === 12) {
-    return <div className="winner"> You Win!</div>;
+  const playAgain = () => {
+    console.log('Play Again');
+    props.setScore(0);
+
+    // reset cards so clicked = false
+    const newCards = cards.map((card) => {
+      return { ...card, clicked: false };
+    });
+
+    // set cards back to the initial state
+    setCards(newCards);
+  };
+
+  if (Number(props.score) === cards.length) {
+    return (
+      <div className="winner">
+        <p>You Win!</p>
+        <button onClick={playAgain}>Play Again</button>
+      </div>
+    );
   } else {
     return (
       <div className="card-board">
