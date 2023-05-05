@@ -1,0 +1,6 @@
+.card-board {
+  display: flex;
+  gap: 1rem;
+  border: solid black 3px;
+  padding: 2rem;
+}
